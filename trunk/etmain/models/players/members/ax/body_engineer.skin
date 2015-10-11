@@ -1,0 +1,8 @@
+md3_back,		"models/players/temperate/axis/engineer/acc/backpack.md3"
+md3_hat,		"models/players/members/ax/helmet.md3"
+md3_rank,		"models/players/temperate/common/rank_helmet.md3"
+
+l_legs,			"models/players/members/ax/legs01.jpg"
+u_body,			"models/players/members/ax/engineer/body_engineer.tga"
+u_rthand,		"models/players/members/ax/engineer/body_engineer.tga"
+u_lfthand,		"models/players/members/ax/engineer/body_engineer.tga"

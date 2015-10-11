@@ -1,0 +1,62 @@
+# -*- mode: python -*-
+# ET build script
+# TTimo <ttimo@idsoftware.com>
+# http://scons.sourceforge.net
+#
+# pheno: made some modifications for latest curl
+
+import scons_utils
+
+Import( 'GLOBALS' )
+Import( GLOBALS )
+
+class idBuildCurl( scons_utils.idSetupBase ):
+
+	def Compile( self, target = None, source = None, env = None ):
+		self.TrySimpleCommand( 'cd ' + self.curl_dir + ' ; make distclean' )
+		
+		cmd = 'cd ' + self.curl_dir + ' ; ./configure'
+		
+		if( g_os == 'win32' ):
+			cmd += ' --host=i586-mingw32msvc'
+		
+		cmd += ' --enable-shared=no --enable-static=yes --enable-libgcc --enable-http --disable-manual --disable-ipv6 --disable-ares --without-ssl --without-zlib --without-libidn'
+		
+		# disable unneeded protocols
+		cmd += ' --disable-dict --disable-file --disable-ftp --disable-gopher --disable-imap --disable-ldap --disable-pop3 --disable-rtsp --disable-smtp --disable-telnet --disable-tftp'
+		
+		if( self.debug ):
+			cmd += ' --enable-debug'
+		else:
+			cmd += ' --disable-debug'
+		
+		# pheno: build Mac OS X universal library
+		if( OS == 'Darwin' ):
+			cmd += ' --disable-dependency-tracking CFLAGS=\'-arch ppc -arch i386\''
+		
+		cmd += ' CC=\'' + g_env['CC'] + '\''
+		
+		self.SimpleCommand( cmd )
+		self.SimpleCommand( 'cd ' + self.curl_dir + ' ; make' )
+		
+		if( self.debug ):
+			self.SimpleCommand( 'cd ' + self.curl_dir + ' ; mv ./lib/.libs/libcurl.a ./lib/.libs/libcurl-debug.a' )
+		else:
+			self.SimpleCommand( 'cd ' + self.curl_dir + ' ; mv ./lib/.libs/libcurl.a ./lib/.libs/libcurl-release.a' )
+		
+		return 0
+
+build = idBuildCurl()
+build.curl_dir = 'curl-7.28.1'
+
+if( local_curl == 1 ):
+	build.debug = 1
+	target_name = '#' + build.curl_dir + '/lib/.libs/libcurl-debug.a'
+else:
+	build.debug = 0
+	target_name = '#' + build.curl_dir + '/lib/.libs/libcurl-release.a'
+
+g_env.Command( target_name, None, Action( build.Compile ) )
+
+curl_libs = [ target_name ]
+Return( 'curl_libs' )

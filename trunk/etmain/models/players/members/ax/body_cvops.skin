@@ -1,0 +1,8 @@
+//md3_back,		"models/players/temperate/allied/cvops/acc/backpack.md3"
+md3_hat,		"models/players/members/ax/cap.md3"
+md3_rank,		"models/players/temperate/common/rank_cap.md3"
+
+l_legs,			"models/players/members/ax/legs01.tga"
+u_body,			"models/players/members/ax/cvops/body_cvops.tga"
+u_rthand,		"models/players/members/ax/cvops/body_cvops.tga"
+u_lfthand,		"models/players/members/ax/cvops/body_cvops.tga"
