@@ -682,7 +682,7 @@ void AnglesToAxis( const vec3_t angles, vec3_t axis[3] );
 void AxisToAngles( /*const*/ vec3_t axis[3], vec3_t angles );
 float VectorDistance(vec3_t v1, vec3_t v2);
 float VectorDistanceSquared(vec3_t v1, vec3_t v2);
-#ifdef _MSC_VER
+#if defined(_MSC_VER) && (_MSC_VER < 1800)
 	int rint (double x);
 #endif
 

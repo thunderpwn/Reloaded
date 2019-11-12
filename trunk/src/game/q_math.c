@@ -1600,7 +1600,7 @@ float VectorDistanceSquared(vec3_t v1, vec3_t v2) {
 	return VectorLengthSquared(dir);
 }
 
-#ifdef _MSC_VER
+#if defined(_MSC_VER) && (_MSC_VER < 1800)
 
 	int rint (double x) {
 		
@@ -1613,7 +1613,6 @@ float VectorDistanceSquared(vec3_t v1, vec3_t v2) {
 
 		return i;
 	}
-
 #endif
 
 // done.

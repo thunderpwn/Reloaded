@@ -1,0 +1,16 @@
+﻿  bg_campaign.c
+  bg_classes.c
+  bg_misc.c
+  q_math.c
+  q_shared.c
+  ui_atoms.c
+  ui_gameinfo.c
+  ui_loadpanel.c
+  ui_main.c
+  ui_players.c
+  ui_shared.c
+  ui_syscalls.c
+  ui_util.c
+  Generating Code...
+     Creating library .\Release/ui_mp_x86.lib and object .\Release/ui_mp_x86.exp
+  ui.vcxproj -> C:\Users\Thunder\Documents\GitHub\Reloaded\trunk\src\ui\..\Release/ui_mp_x86.dll
