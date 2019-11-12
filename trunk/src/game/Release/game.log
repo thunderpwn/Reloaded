@@ -1,0 +1,87 @@
+﻿  bg_animation.c
+  bg_animgroup.c
+  bg_campaign.c
+  bg_character.c
+  bg_classes.c
+  bg_misc.c
+  bg_pmove.c
+  bg_slidemove.c
+  bg_sscript.c
+  bg_stats.c
+  bg_tracemap.c
+  et-antiwarp.c
+  etpro_mdx.c
+  g_active.c
+  g_alarm.c
+  g_antilag.c
+  g_buddy_list.c
+  g_censor.c
+  g_character.c
+  g_client.c
+  Generating Code...
+  Compiling...
+  g_cmds.c
+  g_cmds_ext.c
+  g_combat.c
+  g_config.c
+  g_crash.c
+  g_fireteams.c
+  g_http_client.c
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(141): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: see declaration of 'inet_addr'
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(233): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(419): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2219): note: see declaration of 'gethostbyname'
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(428): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2219): note: see declaration of 'gethostbyname'
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(436): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(560): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2219): note: see declaration of 'gethostbyname'
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(569): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2219): note: see declaration of 'gethostbyname'
+c:\users\thunder\documents\github\reloaded\trunk\src\game\g_http_client.c(582): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
+  g_items.c
+  g_main.c
+  g_match.c
+  g_matchinfo.c
+  g_mem.c
+  g_misc.c
+  g_missile.c
+  g_mover.c
+  g_multiview.c
+  g_player_rating.c
+  g_props.c
+  g_referee.c
+  g_script.c
+  Generating Code...
+  Compiling...
+  g_script_actions.c
+  g_session.c
+  g_settings.c
+  g_shrubbot.c
+  g_spawn.c
+  g_stats.c
+  g_svcmds.c
+  g_syscalls.c
+  g_systemmsg.c
+  g_target.c
+  g_team.c
+  g_teammapdata.c
+  g_trigger.c
+  g_utils.c
+  g_vote.c
+  g_weapon.c
+  g_xpsave.c
+  q_math.c
+  q_shared.c
+  Generating Code...
+  BotLoadLibrary.cpp
+  g_etbot_interface.cpp
+  g_shoutcaster.c
+  geoip.c
+  Generating Code...
+     Creating library .\Release/qagame_mp_x86.lib and object .\Release/qagame_mp_x86.exp
+  game.vcxproj -> C:\Users\Thunder\Documents\GitHub\Reloaded\trunk\src\game\..\Release/qagame_mp_x86.dll

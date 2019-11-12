@@ -360,7 +360,7 @@ void CG_ParseEtpubinfo( void ) {
 	int i = 0;
 	int etpub;
 
-	info = CG_ConfigString( CS_ETPUBINFO );
+	info = CG_ConfigString( CS_RELOADINFO );
 
 	s = Info_ValueForKey(info, "etpub");
 	while(*s != '.' && i < sizeof(a)) {
@@ -1024,7 +1024,7 @@ static void CG_ConfigStringModified( void ) {
 	} else if( num >= CS_OID_DATA && num < CS_OID_DATA + MAX_OID_TRIGGERS ) {
 		CG_ParseOIDInfo( num );
 	}
-	else if(num == CS_ETPUBINFO) {
+	else if(num == CS_RELOADINFO) {
 		CG_ParseEtpubinfo();
 	}
 }

@@ -2241,7 +2241,7 @@ void G_UpdateEtpubinfo(void)
 	Info_SetValueForKey( cs, "g_friendlyFire",
 		va( "%i", g_friendlyFire.integer ) );
 
-	trap_SetConfigstring(CS_ETPUBINFO, cs);
+	trap_SetConfigstring(CS_RELOADINFO, cs);
 }
 
 // Panzer War

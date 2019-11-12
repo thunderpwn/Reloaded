@@ -367,7 +367,7 @@ extern const unsigned int aReinfSeeds[MAX_REINFSEEDS];
 #define CS_ENDGAME_STATS				37
 #define CS_CHARGETIMES					38
 #define CS_FILTERCAMS					39
-#define CS_ETPUBINFO					40
+#define CS_RELOADINFO					40
 
 #define	CS_MODELS						64
 #define	CS_SOUNDS						( CS_MODELS +				MAX_MODELS					)
